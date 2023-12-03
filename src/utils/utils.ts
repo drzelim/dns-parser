@@ -10,7 +10,8 @@ puppeteer.use(pluginStealth);
 
 export const startBrowser = async (): Promise<Browser> => {
   return await puppeteer.launch({
-    headless: true,
+    // headless: true,
+    headless: 'new',
     defaultViewport: {
       width: 1920,
       height: 1080 - 111,

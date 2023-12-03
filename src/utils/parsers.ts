@@ -80,7 +80,7 @@ export const dnsParser = async (url: string) => {
       return (node.firstElementChild as HTMLElement)?.click();
     });
     await page.waitForSelector('.product-buy__price', {timeout: 15000});
-    await waitForTimeout(2000);
+    await waitForTimeout(500);
     allProducts = [...(await getProducts(page)), ...allProducts];
   }
 
